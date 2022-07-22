@@ -1,3 +1,9 @@
-# Project REST-Rant
+# **Project REST-Rant**
 
-REST-Rant is an app where users can review restaurants.
+## **REST-Rant is an app where users can review restaurants.**
+
+## **Description**
+
+## **Demo**
+
+## **Technologies Used**
