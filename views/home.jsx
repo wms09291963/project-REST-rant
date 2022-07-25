@@ -5,16 +5,21 @@ const Def = require('./default')
 function home () {
     return (
       <Def>
-          <main>
+        <main>
               <h1>HOME</h1>
-          </main>
-          <a href="/places">
-           <button className="btn-primary">Places Page</button>
+              <div>
+               <img src="/images/kabobs.jpg" alt="Kabobs"/>
+               <div>
+                Photo by <a href="AUTHOR_LINK">Brenda Godinez</a> on  <a href="UNSPLASH_LINK">Unsplash</a>
+               </div>
+              </div>
+              <a href="/places">
+                <button className="btn-primary">Places Page</button>
           </a>
+        </main>
       </Def>
     )
   }
   
-
-
 module.exports = home
+
