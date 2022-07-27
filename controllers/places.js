@@ -1,11 +1,11 @@
 const router = require('express').Router()
-const places = require('../models/places.js')
 
-router.get('/new', (_req, res) => {
+
+router.get('/new', (req, res) => {
   res.render('places/new')
 })
 router.post('/', (req, res) => {
-  //console.log(req.body)
+  console.log("pic",req.body.pic)
   if (!req.body.pic) {
     // Default image if one is not provided
     req.body.pic = 'http://placekitten.com/400/400'
@@ -16,7 +16,10 @@ router.post('/', (req, res) => {
   if (!req.body.state) {
     req.body.state = 'USA'
   }
+  console.log("before",places)
+
   places.push(req.body)
+  console.log("after",places)
   res.redirect('/places')
 })
 
