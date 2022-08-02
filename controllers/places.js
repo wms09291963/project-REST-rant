@@ -8,7 +8,7 @@ router.get('/:id', (req, res) => {
   if (isNaN(id)){
     res.render('error404')
   }
-  else if(!places[id]) {
+  else if (!places[id]) {
     res.render(error404)
   }
   else {
