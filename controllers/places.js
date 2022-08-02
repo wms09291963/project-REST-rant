@@ -30,14 +30,13 @@ router.post('/', (req, res) => {
   if (!req.body.state) {
     req.body.state = 'USA'
   }
-  console.log("before",places)
+  //console.log("before",places)
 
   places.push(req.body)
-  console.log("after",places)
+  //console.log("after",places)
   res.redirect('/places')
 })
 
-    
-   
+     
 
 module.exports = router
