@@ -6,16 +6,17 @@ function error404 () {
       <Def>
           <main>
               <h1>404: PAGE NOT FOUND</h1>
-              <p>Oops, sorry, we can't find this page!</p>
               <div>
-                <img src="images/404_Kitten.jpg" alt="confused kitty"/> 
+                <img src="/images/game_over.jpg" alt="Game Over Screen" width="500" height="600"/>
                 <div>
-                 Photo by <a href="AUTHOR_LINK">kitten.com</a> on <a href="UNSPLASH_LINK">Unsplash</a>
+                Photo by <a href="https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sigmund</a> on <a href="https://unsplash.com/s/photos/404?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </div>
               </div>
-              </div>
+              
+              <p>Oops, sorry, we can't find this page!</p>
           </main>
       </Def>
     )
   }
-  module.exports = error404
-  
+
+module.exports = error404
